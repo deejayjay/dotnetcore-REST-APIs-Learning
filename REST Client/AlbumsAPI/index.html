@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Albums REST API Client</title>
+    <meta
+      name="author"
+      content="Deepak Joy Jose | deejayjay@zoho.com | deejayjay on GitHub"
+    />
+    <meta
+      name="description"
+      content="This webapp makes use of the AlbumsAPI for CRUD operations on an Albums database"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0058dad5f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- User Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand d-flex align-middle" href="#">
+            <img
+              src="img/album-logo.svg"
+              alt=""
+              width="36"
+              height="36"
+              class="d-inline-block align-text-top me-2"
+            />
+            <span class="pt-1">DMIT Album Repository</span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Albums
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./list.html">List Albums</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./create.html"
+                      >Create Album</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="text-center my-3">DMIT Album Repository - Login</h1>
+        <form action="#" id="loginForm" class="login-form">
+          <div class="mb-3 row">
+            <label for="username" class="col-sm-2 col-form-label"
+              >Username</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="janedoe"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="password" class="col-sm-2 col-form-label"
+              >Password</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10 d-grid">
+              <button type="submit" class="btn btn-success">
+                Login
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
