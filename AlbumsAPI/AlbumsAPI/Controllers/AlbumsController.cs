@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AlbumsAPI.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace AlbumsAPI.Controllers
 {
@@ -16,6 +17,7 @@ namespace AlbumsAPI.Controllers
         }
 
         // GET: api/Albums
+        [EnableCors("AlbumsCorsPolicy")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AlbumDTO>>> GetAlbums()
         {
@@ -25,6 +27,7 @@ namespace AlbumsAPI.Controllers
         }
 
         // GET: api/Albums/5
+        [EnableCors("AlbumsCorsPolicy")]
         [HttpGet("{id}")]
         public async Task<ActionResult<AlbumDTO>> GetAlbum(long id)
         {
@@ -40,6 +43,7 @@ namespace AlbumsAPI.Controllers
 
         // PUT: api/Albums/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [EnableCors("AlbumsCorsPolicy")]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateAlbum(long id, AlbumDTO albumDTO)
         {
@@ -73,6 +77,7 @@ namespace AlbumsAPI.Controllers
 
         // POST: api/Albums
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [EnableCors("AlbumsCorsPolicy")]
         [HttpPost]
         public async Task<ActionResult<AlbumDTO>> CreateAlbum(AlbumDTO albumDTO)
         {
@@ -95,6 +100,7 @@ namespace AlbumsAPI.Controllers
         }
 
         // DELETE: api/Albums/5
+        [EnableCors("AlbumsCorsPolicy")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAlbum(long id)
         {
